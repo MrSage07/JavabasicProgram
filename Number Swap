@@ -1,0 +1,35 @@
+public class Swap_Without_3rdVariable {
+	public static void main(String a[]) {
+
+		/* Define variables */
+		int x = 10;
+		int y = 20;
+		System.out.println("before swapping numbers: " + x + "," + y);
+		/* Swapping */
+		x = x + y;
+		y = x - y;
+		x = x - y;
+		System.out.println("After swapping: " + x + "," + y);
+	}
+}
+
+
+
+
+
+public class Swap_With_3rdVariable {
+	public static void main(String[] args) {
+		int x, y, t;// x and y are to swap
+
+		System.out.println("Enter the value of X and Y");
+		x = 10;
+		y = 20;
+		System.out.println("before swapping numbers: " + x + "  " + y);
+		/* swapping */
+		t = x;
+		x = y;
+		y = t;
+		System.out.println("After swapping: " + x + "   " + y);
+		System.out.println();
+	}
+}
