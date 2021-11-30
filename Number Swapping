@@ -1,0 +1,36 @@
+public class NumberSwap {
+	
+	//use of Public vs Static
+	//When using static there is no need to create object of the class
+	static void swapWithTemp(int x, int y) {
+
+		System.out.println("Original Numbers: " + "X=" + x + "," + "Y=" + y);
+		x = x + y; // x=10,y=20
+		y = x - y; // y=30-20=10
+		x = x - y; // x=30-10=20
+
+		System.out.println("Swapped Numbers: " + "X=" + x + "," + "Y=" + y);
+
+	}
+
+	static void swapWithoutTemp(int a, int b) {
+
+		System.out.println("Original Numbers: " + "X=" + a + "," + "Y=" + b);
+
+		int temp;
+		temp = a;
+		a = b;
+		b = temp;
+		System.out.println("Swapped Numbers: " + "X=" + a + "," + "Y=" + b);
+
+	}
+
+	public static void main(String[] args) {
+		int x = 10, y = 20;
+		NumberSwap.swapWithTemp(x, y);
+		int a = 10, b = 20;
+		NumberSwap.swapWithTemp(a, b);
+
+	}
+
+}
